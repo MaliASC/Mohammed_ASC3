@@ -5,7 +5,7 @@ def setup():
 
 x=randrange(500)
 y=randrange(500)
-xspeed =  
+xspeed = 2
 yspeed = 2
 def draw():
     background(230,190,138)

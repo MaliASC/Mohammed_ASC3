@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+  </head>
+  <body>
+    <!-- What user will use for input -->
+    <input placeholder='Name' type='text' id='name'>
+    <input placeholder='Message' type='text' id='message'>
+    <!-- button for sending message to message board -->
+    <button onclick='sendMessage()' id='js'>Use Plain JS</button>
+    <!-- Empty div where the messages will show up -->
+    <div id='messageBoard'></div>
+    	<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAtAW-FyNZUmYVXhf5y3nnHwP5RujH4lNM",
+    authDomain: "mlbsquad-b8171.firebaseapp.com",
+    databaseURL: "https://mlbsquad-b8171.firebaseio.com",
+    storageBucket: "mlbsquad-b8171.appspot.com",
+  };
+  firebase.initializeApp(config);
+	</script>
+
+
+    <!-- adding jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- script we'll make dynamic changes with. You'll have to create this file -->
+    <script src='myChat.js'></script>
+  </body>
+</html>
+
+
